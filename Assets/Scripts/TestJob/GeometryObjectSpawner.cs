@@ -53,11 +53,9 @@ namespace TestJob
         {
             var geometryObjectName = _geometryObjectsJson.RandomName;
 
-            var geometryObject = _instantiator.InstantiatePrefab(_geometryObjectPrefabs[geometryObjectName]);
-
             var clickColorData = _geometryObjectData.FindClickColorData(geometryObjectName);
 
-            var geometryObjectView = geometryObject.GetComponent<IGeometryObjectView>();
+            var geometryObjectView = _instantiator.InstantiatePrefabForComponent<IGeometryObjectView>(_geometryObjectPrefabs[geometryObjectName]);
             var geometryObjectModel = new GeometryObjectModel(clickColorData);
             var geometryObjectController = new GeometryObjectController(geometryObjectModel, geometryObjectView);
 

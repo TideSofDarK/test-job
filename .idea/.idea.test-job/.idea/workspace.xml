@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d9f4fe6-93a1-41d5-9f1d-6438c2f50574" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.test-job/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.test-job/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.test-job/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.test-job/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.test-job/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.test-job/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestJob/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestJob/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestJob/GeometryObjectSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestJob/GeometryObjectSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestJob/GeometryObjectView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestJob/GeometryObjectView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +67,8 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Scripts/Installers/GameInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestJob/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestJob/GeometryObjectView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TestJob/GeometryObjectSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestJob/GameInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestJob/GeometryObjectSpawner.cs" />
       </list>
     </option>
   </component>
@@ -132,7 +126,7 @@
       <updated>1583745554719</updated>
       <workItem from="1583745558027" duration="2491000" />
       <workItem from="1584273213549" duration="10779000" />
-      <workItem from="1584359781708" duration="1043000" />
+      <workItem from="1584359781708" duration="1918000" />
     </task>
     <servers />
   </component>
