@@ -1,6 +1,9 @@
 ﻿using System;
 using UnityEngine;
+using Zenject;
 using Random = UnityEngine.Random;
+
+#pragma warning disable 649
 
 namespace TestJob
 {
@@ -18,8 +21,11 @@ namespace TestJob
 
     public class GeometryObjectView : MonoBehaviour, IGeometryObjectView
     {
-        private Renderer _renderer;
+        [Inject] private Renderer _renderer;
+
         private static readonly int ColorID = Shader.PropertyToID("_Color");
+
+        [Inject] private Camera _camera;
 
         public event EventHandler<GeometryObjectClickedEventArgs> OnClicked = (sender, e) => { };
 
@@ -33,20 +39,15 @@ namespace TestJob
             set => transform.position = value;
         }
 
-        private void Awake()
-        {
-            _renderer = GetComponent<Renderer>();
-        }
-
         private void Update()
         {
             if (!Input.GetMouseButtonDown(0)) return;
-            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            var ray = _camera.ScreenPointToRay(Input.mousePosition);
             if (!Physics.Raycast(ray, out var hit) || hit.transform != transform) return;
             var eventArgs = new GeometryObjectClickedEventArgs();
             OnClicked(this, eventArgs);
         }
-        
+
         public void SetRandomColor()
         {
             Color = new Color(Random.value, Random.value, Random.value);

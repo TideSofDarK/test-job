@@ -1,4 +1,7 @@
 ﻿using UnityEngine;
+using Zenject;
+
+#pragma warning disable 649
 
 namespace TestJob
 {
@@ -6,18 +9,15 @@ namespace TestJob
     {
         public static GameData gameData;
 
-        private GeometryObjectSpawner _geometryObjectSpawner;
-        private Camera _camera;
+        [Inject] private GeometryObjectSpawner _geometryObjectSpawner;
+
+        [Inject] private Camera _camera;
 
         private void Awake()
         {
             gameData = Resources.Load<GameData>("GameData");
-
-            _camera = Camera.main;
-
-            _geometryObjectSpawner = new GeometryObjectSpawner();
         }
-        
+
         private void Update()
         {
             if (Input.GetMouseButtonDown(0))
